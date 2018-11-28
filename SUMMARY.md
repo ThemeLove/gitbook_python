@@ -1,6 +1,6 @@
 #summary 
 * [VirtualBox的安装](VirtualBox-安装.md)
-* [常用web知识点](common_knowledge_point.md)
+* [linux常用命令](linux常用命令.md)
 * [第七章-HTML5+CSS3]()
 	* [第一天](chapter07_HTML5+CSS3/HTML5+CSS3_day01.md) 
 	* [第二天](chapter07_HTML5+CSS3/HTML5+CSS3_day02.md) 
