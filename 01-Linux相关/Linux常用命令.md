@@ -24,7 +24,7 @@
 | 20 | ssh \[-l login\_name\] \[-p port\]\[user@\]hostname |  | ssh命令用于远程登录上Linux主机 |
 | 21 | scp  \[-l login\] \[-P port\] \[user@\]hostname：源文件  目标文件 | secure copy | Linux 远程拷贝命令:从远程拷贝到本地 |
 | 22 | scp 源文件 \[-l login\_name\] \[-P port\] \[user@\]\[hostname\]:目标文件 | secure copy | Linux 远程拷贝命令：从本地拷贝到远程 |
-| 23 | chmod +/-rwx 文件名\|目录名 |  |  |
+| 23 | chmod +/-rwx 文件名\|目录名 | change mode | 可以修改用户/组 对 文件/目录的权限 |
 
 # 常用命令参数详解
 
