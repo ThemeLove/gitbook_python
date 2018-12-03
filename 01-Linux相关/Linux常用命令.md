@@ -143,6 +143,7 @@
 | groupadd 组名 | 添加组 |  |
 | groupdel 组名 | 删除组 |  |
 | cat /etc/group | 确认组信息 |  |
+| chgrp -R 组名 文件/目录名 |  |  |
 
 
 
