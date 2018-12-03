@@ -96,7 +96,8 @@
     Host alias
         HostName ip地址
         User     itheima 
-        Port     22
+        Port     22 
+保存之后即可使用 ssh alias 实现远程登录了，scp 中同样可以使用。例如：scp -r alias:Desktop .    
 ```
 
 
