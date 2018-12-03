@@ -138,12 +138,22 @@
 
 ### 组管理（group）命令：
 
-| 命令 | 功能 |  |
+| 命令 | 功能 | 实例 |
 | :--- | :--- | :--- |
-| groupadd 组名 | 添加组 |  |
-| groupdel 组名 | 删除组 |  |
-| cat /etc/group | 确认组信息 |  |
-| chgrp -R 组名 文件/目录名 | 递归修改文件/目录的所属组 |  |
+| groupadd 组名 | 添加组 | groupadd dev |
+| groupdel 组名 | 删除组 | groupdel test |
+| cat /etc/group | 确认组信息 | cat /etc/group |
+| chgrp -R 组名 文件/目录名 | 递归修改文件/目录的所属组 | sudo chgrp -R dev LearnDir |
+
+### 创建用户/设置密码/删除用户
+
+| 命令 | 作用 | 说明 |
+| :--- | :--- | :--- |
+| useradd -m -g 组名 新建用户名 | 添加新用户 | -m 自动建立用户家目录 ;-g 指定用户所在组，否则建立一个同名的组 |
+| passwd 用户名 | 设置用户密码 | 如果是普通用户，直接用passwd可以修改自己的账户密码 |
+|  |  |  |
+|  |  |  |
+|  |  |  |
 
 
 
