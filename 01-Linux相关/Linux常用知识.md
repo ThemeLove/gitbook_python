@@ -100,5 +100,9 @@
 保存之后即可使用 ssh alias 实现远程登录了，scp 中同样可以使用。例如：scp -r ~/Desktop alias:Desktop/demo
 ```
 
+17.Linux 文件或目录权限说明
+
+![](/assets/Linux文件权限说明.png)
+
 
 
