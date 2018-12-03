@@ -80,8 +80,8 @@
 
 ```
 步骤
-    生成公钥：ssh-keyten 即可生成SSH钥匙，一路回车即可 
-    上传公钥到服务器：
+    生成公钥：执行ssh-keyten 即可生成SSH钥匙，一路回车即可 
+    上传公钥到服务器：执行ssh-copy-id -p port user@remote ,可以让远程服务器记住我们的公钥
 ```
 
 
