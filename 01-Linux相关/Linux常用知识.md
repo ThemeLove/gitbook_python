@@ -69,5 +69,36 @@
 | HTTPS服务器 | 445 |
 | FTP服务器 | 21 |
 
+13.FileZilla 是一款免费开源的FTP软件，分为客户端版本和服务器版本，具备所有的FTP软件功能。
+
+```
+1.可以用图像化界面的方式来管理本地和远程服务器文件，window上比较好用。
+2.FileZilla在传输文件时，使用的是FTP服务，而不是SSH服务，因此端口号应该设置为21
+```
+
+14.免密码登录
+
+```
+步骤
+    生成公钥：执行ssh-keyten 即可生成SSH钥匙，一路回车即可 
+    上传公钥到服务器：执行ssh-copy-id -p port user@remote ,可以让远程服务器记住我们的公钥
+```
+
+15.非对称加密算法
+
+* `本地`使用`私钥`对数据进行`加密/解密`
+* `服务器`使用`公钥`对数据进行`加密/解密`
+
+16.配置远程计算机的别名
+
+```
+可以在本地~/.ssh/config 里面追加以下内容：
+    Host alias
+        HostName ip地址
+        User     itheima 
+        Port     22 
+保存之后即可使用 ssh alias 实现远程登录了，scp 中同样可以使用。例如：scp -r ~/Desktop alias:Desktop/demo
+```
+
 
 
