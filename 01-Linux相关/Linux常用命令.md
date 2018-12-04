@@ -28,6 +28,8 @@
 | 22 | scp 源文件 \[-l login\_name\] \[-P port\] \[user@\]\[hostname\]:目标文件 | secure copy | Linux 远程拷贝命令：从本地拷贝到远程 |
 | 23 | chmod +/-rwx 文件名/目录名 | change mode | 可以修改`用户/组`对 `文件/目录`的权限 |
 | 24 | usermod -g 组 用户名 |  | 修改用户的主组（passwd中的GID） |
+| 25 | usermode -G 组 用户名 |  | 修改用户附加组 |
+| 26 | usermod -s  /bin/bash |  | 修改用户登录Shell |
 
 # 常用命令参数详解
 
