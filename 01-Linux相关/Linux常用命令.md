@@ -30,6 +30,7 @@
 | 24 | usermod -g 组 用户名 |  | 修改用户的主组（passwd中的GID） |
 | 25 | usermode -G 组 用户名 |  | 修改用户附加组 |
 | 26 | usermod -s  /bin/bash 用户名 |  | 修改用户登录Shell |
+| 27 | which 命令 |  | 查看执行命令所在位置 |
 
 # 常用命令参数详解
 
