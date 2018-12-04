@@ -123,15 +123,15 @@
 > 1. `usermod 可以用来设置用户的主组/附加组和登录shell`
 > 2. `默认使用useradd添加的用户是没有权限使用sudo 以root身份执行命令的，可以使用一下命令，将用户添加到sudo的附加组中：usermod -G sudo 用户名`
 
-20.在linux中，绝大多数可执行文件都是保存在/bin,/sbin,/usr/bin,/usr/sbin中
+20.在linux中，绝大多数可执行文件都是保存在`/bin`;`/sbin`;`/usr/bin`;`/usr/sbin`中
 
 > `1./bin (binary)是二进制执行文件目录，主要用于具体应用`
 >
 > `2./sbin (system binary) 是系统管理员专用的二进制代码存放目录，主要用于系统管理`
 >
-> `3./usr/bin (user commands fro application) 后期安装的一些软件 `
+> `3./usr/bin (user commands fro application) 后期安装的一些软件`
 >
 > `4./usr/sbin (super user commands for application) 超级用户的一些管理程序`
 
-21.cd 这个终端命令是内置在系统内核中的，没有独立的文件，因此用`which`无法找到       
+21.cd 这个终端命令是内置在系统内核中的，没有独立的文件，因此用`which`无法找到
 
