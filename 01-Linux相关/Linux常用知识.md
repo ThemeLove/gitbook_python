@@ -120,9 +120,9 @@
 
 19.usermod
 
-* `usermod 可以用来设置用户的主组/附加组和登录shell`
-* `默认使用useradd添加的用户是没有权限使用sudo 以root身份执行命令的，可以使用一下命令，将用户添加到sudo的附加组中`
-* `usermod -G sudo 用户名`
+ ```usermod 可以用来设置用户的主组/附加组和登录shell
+ 默认使用useradd添加的用户是没有权限使用sudo 以root身份执行命令的，可以使用一下命令，将用户添加到sudo的附加组中
+ usermod -G sudo 用户名```
 
 
 
