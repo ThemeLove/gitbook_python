@@ -125,3 +125,13 @@
 
 20.在linux中，绝大多数可执行文件都是保存在/bin,/sbin,/usr/bin,/usr/sbin中
 
+> `1./bin (binary)是二进制执行文件目录，主要用于具体应用`
+>
+> `2./sbin (system binary) 是系统管理员专用的二进制代码存放目录，主要用于系统管理`
+>
+> `3./usr/bin (user commands fro application) 后期安装的一些软件 `
+>
+> `4./usr/sbin (super user commands for application) 超级用户的一些管理程序`
+
+21.cd 这个终端命令是内置在系统内核中的，没有独立的文件，因此用`which`无法找到       
+
