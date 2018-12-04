@@ -136,7 +136,35 @@
 21.cd 这个终端命令是内置在系统内核中的，没有独立的文件，因此用`which`无法找到
 
 22.chmod在设置权限时，可以简单地使用三个数字分别对应`拥有者`/`组`/`其他`用户的权限
-
+<table border="1"  cellpadding="10" style="border-collapse:collapse">
+    <tr>
+        <th colspan="3">拥有者</th>
+        <th colspan="3">组</th>
+        <th colspan="3">其他</th>
+    </tr>
+    <tr>
+        <td>r</td>
+        <td>w</td>
+        <td>x</td>
+        <td>r</td>
+        <td>w</td>
+        <td>x</td>
+        <td>r</td>
+        <td>w</td>
+        <td>x</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>2</td>
+        <td>1</td>
+        <td>4</td>
+        <td>2</td>
+        <td>1</td>
+        <td>4</td>
+        <td>2</td>
+        <td>1</td>
+    </tr>
+</table>
 
 
 
