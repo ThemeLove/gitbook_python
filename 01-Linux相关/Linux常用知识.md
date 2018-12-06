@@ -208,14 +208,12 @@
 			tar -zxvf 压缩包.tar.gz -C /opt
 		或者
 			tar -jxvf 压缩包.tar.bz2 -C /opt 
-
 	2. 配置快捷方式 
 		这里以firefox为例，假设firefox安装在/opt/firefox目录下
 		（1）. 进入 /usr/share/applications目录下创建firefox.desktop
 		   命令如下：cd /usr/share/applications
 					sudo touch firefox.desktop
 		（2）. 用编辑器打开firefox.desktop,编辑内容为： 
-			
 		    [Desktop Entry]
 			Name=firefox
 			Name[zh_CN]=火狐浏览器
