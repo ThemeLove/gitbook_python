@@ -228,7 +228,7 @@
 			StartupNotify=true 
 
 #####29.Linux中在软件的卸载
-	1. Linux中一般在终端中用 `apt install` 安装的软件都可以用 `apt remove` 来卸载  
+	1. Linux中一般在终端中用 apt install 安装的软件都可以用 apt remove 来卸载  
 	2. 如果是解压缩安装的软件
 		（1）. 删除安装目录，即解压缩目录
 		（2）. 一般在用户家目录下有个对应软件的隐藏配置文件目录，将其删除
