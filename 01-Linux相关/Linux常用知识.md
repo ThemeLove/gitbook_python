@@ -227,7 +227,9 @@
 			Categories=Application
 			Encoding=UTF-8
 			StartupNotify=true 
-	   	
+
+#####29.Linux中在终端中用 `apt install` 安装的软件都可以用 `apt remove` 来卸载   	
+
 
 
 
