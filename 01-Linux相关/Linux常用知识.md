@@ -220,7 +220,7 @@
 			Name[zh_CN]=火狐浏览器
 			Comment=火狐浏览器
 			Exec=/opt/firefox/firefox
-			Icon=/opt/firefox/browser/icons/mozicon128.png #可能在其他位置
+			Icon=/opt/firefox/browser/chrome/icons/default/default128.png #可能在其他位置
 			Terminal=false
 			Type=Application
 			Categories=Application
