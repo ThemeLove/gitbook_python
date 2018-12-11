@@ -232,7 +232,11 @@
 	2. 如果是解压缩安装的软件
 		（1）. 删除安装目录，即解压缩目录
 		（2）. 一般在用户家目录下有个对应软件的隐藏配置文件目录，将其删除
-		（3）. 到 /usr/share/applications 目录下删除对应的桌面快捷方式	
+		（3）. 到 /usr/share/applications 目录下删除对应的桌面快捷方式	 
+
+#####30.在VirtualBox安装的Ubuntu中配置的共享目录，通常会遇到没有权限的情况。
+	解决办法：将用户添加到 vboxsf 组中,然后重启ubuntu
+			 执行命令：sudo adduser 用户名 vboxsf 
 
 
 
