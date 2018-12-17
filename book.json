@@ -1,6 +1,22 @@
 {
-    "plugins": ["expandable-chapters-small"],
+	"plugins":	[
+				"expandable-chapters-small",
+				"prism",
+				"-highlight"
+				],
     "pluginsConfig": {
-        "expandable-chapters-small":{}
-    }
+		"expandable-chapters-small":{},
+		"prism": {
+			"css": [
+				"prismjs/themes/prism-okaidia.css"
+			],
+			"lang": {
+				"flow": "typescript"
+			},
+			"ignore": [
+				"mermaid",
+				"eval-js"
+			]
+		}
+	}
 }
