@@ -19,4 +19,16 @@
 ####3.常用函数
 	type()函数能够查看一个对象的类型
 	id()函数能够查看一个对象的内存地址
-	hex()函数用于将10进制整数转换成16进制，以字符串形式表示。
+	hex()函数用于将10进制整数转换成16进制，以字符串形式表示 
+
+####4.os.getpid() 可以获取当前进程的pid 
+####5.multiprocessing.cpu_count()获取cpu的核心数
+####6.模块名.__file__:可以获取当前模块的文件位置
+例如：os.__file__  
+![](https://i.imgur.com/2KZ6A9N.png) 
+####7.__init__.py 文件的作用
+	 1. Python中package的标识，不能删除。只有包下有该文件，才可以被外部导入
+	 2. 定义__all__用来模糊导入，需要配置__init.py
+	    比如import common,就必须在该common包目录下的__init__.py中配置可以模糊导入的模块，如下
+![](https://i.imgur.com/dMZnASn.png)
+	
