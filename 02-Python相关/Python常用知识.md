@@ -30,5 +30,14 @@
 	 1. Python中package的标识，不能删除。只有包下有该文件，才可以被外部导入
 	 2. 定义__all__用来模糊导入，需要配置__init.py
 	    比如import common,就必须在该common包目录下的__init__.py中配置可以模糊导入的模块，如下
-![](https://i.imgur.com/dMZnASn.png)
+![](https://i.imgur.com/dMZnASn.png) 
+####8.enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中 
+	语法：enumerate(sequence, [start=0])
+
+	参数
+    sequence -- 一个序列、迭代器或其他支持迭代对象。
+    start -- 下标起始位置 
+
+![](https://i.imgur.com/tFGnzYP.png)
+
 	
