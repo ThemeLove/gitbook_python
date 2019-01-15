@@ -43,7 +43,15 @@
 		* [07-连接查询](Python进阶/06-MySQL的查询/07-连接查询.md) 
 		* [08-自关联](Python进阶/06-MySQL的查询/08-自关联.md) 
 		* [09-子查询](Python进阶/06-MySQL的查询/09-子查询.md) 
-		* [10-总结](Python进阶/06-MySQL的查询/10-总结.md)
+		* [10-总结](Python进阶/06-MySQL的查询/10-总结.md)   
+	* [07-MySQL高级](Python进阶/07-MySQL高级/README.md)  
+		* [01-MySQL与Python交互](Python进阶/07-MySQL高级/01-MySQL与Python交互.md) 
+		* [02-MySQL视图](Python进阶/07-MySQL高级/02-MySQL视图.md) 
+		* [03-MySQL事务](Python进阶/07-MySQL高级/03-MySQL事务.md) 
+		* [04-MySQL索引](Python进阶/07-MySQL高级/04-MySQL索引.md) 
+		* [05-MySQL账户管理-1授予权限](Python进阶/07-MySQL高级/05-MySQL账户管理-1授予权限.md)  
+		* [06-MySQL账户管理-2账户操作](Python进阶/07-MySQL高级/06-MySQL账户管理-2账户操作.md)
+		* [07-MySQL主从](Python进阶/07-MySQL高级/07-MySQL主从.md) 
 		
 
 
