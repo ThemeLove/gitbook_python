@@ -51,7 +51,11 @@
 		* [04-MySQL索引](Python进阶/07-MySQL高级/04-MySQL索引.md) 
 		* [05-MySQL账户管理-1授予权限](Python进阶/07-MySQL高级/05-MySQL账户管理-1授予权限.md)  
 		* [06-MySQL账户管理-2账户操作](Python进阶/07-MySQL高级/06-MySQL账户管理-2账户操作.md)
-		* [07-MySQL主从](Python进阶/07-MySQL高级/07-MySQL主从.md) 
-		
+		* [07-MySQL主从](Python进阶/07-MySQL高级/07-MySQL主从.md)    
+	* [08-mini-web框架](Python进阶/08-mini-web框架/README.md)
+		* [01-动态资源请求过程和WSGI](Python进阶/08-mini-web框架/01-动态资源请求过程和WSGI.md) 
+		* [02-webserver实现](Python进阶/08-mini-web框架/02-webserver实现.md)
+		* [03-mini_frame实现](Python进阶/08-mini-web框架/03-mini_frame实现.md) 
+		* [04-本章知识点](Python进阶/08-mini-web框架/04-本章知识点.md)		
 
 
