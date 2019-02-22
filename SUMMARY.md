@@ -56,6 +56,8 @@
 		* [01-动态资源请求过程和WSGI](Python进阶/08-mini-web框架/01-动态资源请求过程和WSGI.md) 
 		* [02-webserver实现](Python进阶/08-mini-web框架/02-webserver实现.md)
 		* [03-mini_frame实现](Python进阶/08-mini-web框架/03-mini_frame实现.md) 
-		* [04-本章知识点](Python进阶/08-mini-web框架/04-本章知识点.md)		
+		* [04-本章知识点](Python进阶/08-mini-web框架/04-本章知识点.md)	 
+	* [09-Django框架](Python进阶/09-Django框架/README.md)	
+		* [01-安装虚拟环境和Django](Python进阶/09-Django框架/01-安装虚拟环境和Django.md)
 
 
