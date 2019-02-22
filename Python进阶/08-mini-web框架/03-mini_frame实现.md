@@ -7,7 +7,8 @@
 		5.urllib.parse.quoto 和 urllib.parse.unquoto 完成url的encode和decode 
 		6.json模块的使用
 	知识点：
-		1.允许数据库远程连接
+		1.允许数据库远程连接 
+		2.备份数据库
 	
 
 ```python
