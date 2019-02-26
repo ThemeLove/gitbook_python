@@ -58,6 +58,8 @@
 		* [03-mini_frame实现](Python进阶/08-mini-web框架/03-mini_frame实现.md) 
 		* [04-本章知识点](Python进阶/08-mini-web框架/04-本章知识点.md)	 
 	* [09-Django框架](Python进阶/09-Django框架/README.md)	
-		* [01-安装虚拟环境和Django](Python进阶/09-Django框架/01-安装虚拟环境和Django.md)
+		* [01-安装虚拟环境和Django](Python进阶/09-Django框架/01-安装虚拟环境和Django.md)  
+		* [02-Django常用配置](Python进阶/09-Django框架/02-Django常用配置.md) 
+		* [03-Django查询](Python进阶/09-Django框架/03-Django查询.md)
 
 
