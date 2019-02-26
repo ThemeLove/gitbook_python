@@ -62,5 +62,7 @@
 		* [02-Django常用配置](Python进阶/09-Django框架/02-Django常用配置.md) 
 		* [03-Django查询](Python进阶/09-Django框架/03-Django查询.md)
 		* [04-Django查询集](Python进阶/09-Django框架/04-Django查询集.md)
+		* [05-模型类关系](Python进阶/09-Django框架/05-模型类关系.md) 
+		* [06-模型类扩展](Python进阶/09-Django框架/06-模型类扩展.md) 
 
 
