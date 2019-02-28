@@ -60,9 +60,13 @@
 	* [09-Django框架](Python进阶/09-Django框架/README.md)	
 		* [01-安装虚拟环境和Django](Python进阶/09-Django框架/01-安装虚拟环境和Django.md)  
 		* [02-Django常用配置](Python进阶/09-Django框架/02-Django常用配置.md) 
-		* [03-Django查询](Python进阶/09-Django框架/03-Django查询.md)
-		* [04-Django查询集](Python进阶/09-Django框架/04-Django查询集.md)
-		* [05-模型类关系](Python进阶/09-Django框架/05-模型类关系.md) 
-		* [06-模型类扩展](Python进阶/09-Django框架/06-模型类扩展.md) 
+		* [03-Model-查询](Python进阶/09-Django框架/03-Model-查询.md)
+		* [04-Model-查询集](Python进阶/09-Django框架/04-Model-查询集.md)
+		* [05-Model-模型类关系](Python进阶/09-Django框架/05-Model-模型类关系.md) 
+		* [06-Model-模型类扩展](Python进阶/09-Django框架/06-Model-模型类扩展.md) 
+		* [07-View-简介](Python进阶/09-Django框架/07-View-简介.md)
+		* [08-View-HttpRequest](Python进阶/09-Django框架/08-View-HttpRequest.md)
+		* [09-View-HttpResponse](Python进阶/09-Django框架/09-View-HttpResponse.md)
+		* [10-View-Cookie和Session](Python进阶/09-Django框架/10-View-Cookie和Session.md) 
 
 
