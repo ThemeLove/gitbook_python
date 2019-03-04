@@ -67,6 +67,8 @@
 		* [07-View-简介](Python进阶/09-Django框架/07-View-简介.md)
 		* [08-View-HttpRequest](Python进阶/09-Django框架/08-View-HttpRequest.md)
 		* [09-View-HttpResponse](Python进阶/09-Django框架/09-View-HttpResponse.md)
-		* [10-View-Cookie和Session](Python进阶/09-Django框架/10-View-Cookie和Session.md) 
+		* [10-View-Cookie和Session](Python进阶/09-Django框架/10-View-Cookie和Session.md)  
+		* [11-Template-模板语言](Python进阶/09-Django框架/11-Template-模板语言.md)     
+		* [12-Template-高级](Python进阶/09-Django框架/12-Template-高级.md)
 
 
