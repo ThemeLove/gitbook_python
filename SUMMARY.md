@@ -70,6 +70,6 @@
 		* [10-View-Cookie和Session](Python进阶/09-Django框架/10-View-Cookie和Session.md)  
 		* [11-Template-模板语言](Python进阶/09-Django框架/11-Template-模板语言.md)     
 		* [12-Django-转义-CSRF-验证码](Python进阶/09-Django框架/12-Django-转义-CSRF-验证码.md)  
-		* [13-Django-中间件](Python进阶/09-Django框架/13-Django-中间件.md)
-
+		* [13-Django-静态文件处理.md](Python进阶/09-Django框架/13-Django-静态文件处理.md) 
+		* [14-Django-中间间.md](Python进阶/09-Django框架/14-Django-中间件.md)
 
