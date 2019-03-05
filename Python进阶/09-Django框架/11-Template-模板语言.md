@@ -258,7 +258,77 @@ my_filter.py代码如下：
 
 	{%comment%}
 	...
-	{%endcomment%}
+	{%endcomment%}  
+
+####6.模板继承  
+模板继承和类的继承含义是一样的，主要是为了提高代码重用，减轻开发人员的工作量。
+
+**典型应用：网站的头部、尾部信息。**
+
+**父模板**
+如果发现在多个模板中某些内容相同，那就应该把这段内容定义到父模板中。
+
+标签block：用于在父模板中预留区域，留给子模板填充差异性的内容，名字不能相同。 为了更好的可读性，建议给endblock标签写上名字，这个名字与对应的block名字相同。父模板中也可以使用上下文中传递过来的数据。
+
+	{%block 名称%}
+	预留区域，可以编写默认内容，也可以没有默认内容
+	{%endblock  名称%}
+
+**子模板**
+标签extends：继承，写在子模板文件的第一行。
+
+	{% extends "父模板路径"%}
+
+子模版不用填充父模版中的所有预留区域，如果子模版没有填充，则使用父模版定义的默认值。
+
+填充父模板中指定名称的预留区域。
+
+	{%block 名称%}
+	实际填充内容
+	{{block.super}}用于获取父模板中block的内容
+	{%endblock 名称%}
+
+示例：
+父模板中的代码如下：  
+
+```html
+
+	<html>
+		<head>
+	    	<title>{{title}}</title>
+		</head>
+		<body>
+			<h2>这是头</h2>
+			<hr>
+				{%block qu1%}
+				这是区域一，有默认值
+				{%endblock qu1%}
+			<hr>
+				{%block qu2%}
+				{%endblock qu2%}
+			<hr>
+			<h2>这是尾</h2>
+		</body>
+	</html>
+```    
+
+子模板中的代码如下： 
+
+```html
+
+	{%extends 'booktest/inherit_base.html'%}
+	{%block qu2%}
+	<ul>
+	    {%for book in list%}
+	    <li>{{book.btitle}}</li>
+	    {%endfor%}
+	</ul>
+	{%endblock qu2%}
+
+```
+
+运行效果如下： 
+![](https://i.imgur.com/93DBO7Y.png)
 
 
 
