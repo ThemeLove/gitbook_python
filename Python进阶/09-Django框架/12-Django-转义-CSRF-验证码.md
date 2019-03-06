@@ -68,7 +68,6 @@ views.py代码如下：
 	    {{title}}
 	{%endautoescape%}
 	
-	
 	</body>
 	</html>
 ```
