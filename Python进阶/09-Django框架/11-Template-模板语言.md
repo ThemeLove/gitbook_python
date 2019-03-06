@@ -52,24 +52,25 @@ temp_var.html模板文件如下：
 
 
 ####2.标签  
-语法如下：  
+语法如下：
+  
+&#123;&#37;代码段&#37;&#125;
 
-	{%代码段%}
 
-for标签语法如下：
+for标签语法如下： 
 
-	{%for item in 列表%}
-	循环逻辑
-	{{forloop.counter}}表示当前是第几次循环，从1开始
-	{%empty%}
-	列表为空或不存在时执行此逻辑
-	{%endfor%}
+>	{%for item in 列表%}    
+>	循环逻辑    
+>	{{forloop.counter}}表示当前是第几次循环，从1开始    
+>	&#123;&#37;empty&#37;&#125;   
+>	列表为空或不存在时执行此逻辑    
+>	{%endfor%}    
 
 if标签语法如下：
 
-	{%if ...%}
+	{%if 条件%}
 	逻辑1
-	{%elif ...%}
+	{%elif 条件%}
 	逻辑2
 	{%else%}
 	逻辑3
@@ -123,8 +124,6 @@ temp_tag.html模板文件如下：
 	        {%else%}
 	            <li style="background-color: green;">{{book.btitle}}</li>
 	        {%endif%}
-	    {%empty%}
-	        <li>对不起，没有图书</li>
 	    {%endfor%}
 	</ul>
 	</body>
@@ -195,7 +194,7 @@ temp_filter.html模板文件如下：
 	            <li style="background-color: green;">
 	                {{book.btitle}}
 	                ---格式化时间为：
-	                {{book.bpub_date|date:"Y-m-j"}}
+	                {{ book.bpub_date|date:"Y-m-j"}}
 	            </li>
 	        {%endif%}
 	    {%endfor%}
