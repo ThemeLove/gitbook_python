@@ -46,8 +46,8 @@ views.py中的代码：
 	修改后：<img src="/abc/images/meinv1.jpg"/>
 	<hr>
 	动态配置：
-	{%load static from staticfiles%}
-	<img src="{%static 'images/meinv1.jpg' %}"/>
+	{ % load static from staticfiles%}
+	<img src="{ % static 'images/meinv1.jpg' %}"/>
 	</body>
 	</html>
 ``` 

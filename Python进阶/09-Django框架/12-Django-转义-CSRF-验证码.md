@@ -24,9 +24,9 @@
 
 > **2. 标签autoescape：设置一段代码都禁用转义，接受on、off参数。**
 	
-	{%autoescape off%}
+	{ % autoescape off % }
 	...
-	{%endautoescape%}
+	{ % endautoescape % }
   
 代码示例： 
 
@@ -55,18 +55,18 @@ views.py代码如下：
 	
 	2.html文件中的硬编码和django模板硬编码都会被浏览器解析: <br>
 	html硬编码：<h1>hello django</h1>
-	django模板硬编码：{{no_title|default:"<h1>hello django</h1>"}}
+	django模板硬编码：{ { no_title|default:"<h1>hello django</h1>" } }
 	
 	3.django模板变量可以用safe过滤器来关闭某个模板变量的转义：<br>
-	django-safe:{{title|safe}} <br>
+	django-safe:{ { title | safe } } <br>
 	
 	
 	4.django中也可以用模板标签autoescape来控制标签内的内容是否转义：<br>
 	django-autoescape标签：<br>
 	
-	{%autoescape on%}
+	{ % autoescape on% }
 	    {{title}}
-	{%endautoescape%}
+	{ % endautoescape % }
 	
 	</body>
 	</html>
@@ -179,7 +179,7 @@ CSRF示意图：
 ```  
 > 3.在模板中使用  
 
-	反向解析配置：<a href="{%url 'booktest:index'%}">反向代理配置index页面</a>  
+	反向解析配置：<a href="{ % url 'booktest:index'%}">反向代理配置index页面</a>  
 > 4.在重定向中使用  
 	return redirect(reverse('booktest:index'))   
 
@@ -205,7 +205,7 @@ CSRF示意图：
 	<body>
 	普通链接：<a href="/fan2_3/">fan2</a>
 	<hr>
-	反向解析：<a href="{%url 'booktest:fan2' 2 3%}">fan2</a>
+	反向解析：<a href="{ % url 'booktest:fan2' 2 3%}">fan2</a>
 	</body>
 	</html>
 
@@ -231,7 +231,7 @@ CSRF示意图：
 	<body>
 	普通链接：<a href="/fan100_18/">fan2</a>
 	<hr>
-	反向解析：<a href="{%url 'booktest:fan2' id=100 age=18%}">fan2</a>
+	反向解析：<a href="{ % url 'booktest:fan2' id=100 age=18%}">fan2</a>
 	</body>
 	</html>  
 

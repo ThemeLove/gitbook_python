@@ -54,14 +54,14 @@ temp_var.html模板文件如下：
 ####2.标签  
 语法如下：
   
-	{% 代码段 %}
+	{ % 代码段 % }
 
 for标签语法如下： 
 
 	{%for item in 列表%}    
 	循环逻辑    
 	{{forloop.counter}}表示当前是第几次循环，从1开始    
-	{%empty%}   
+	{ % empty % }   
 	列表为空或不存在时执行此逻辑    
 	{%endfor%}    
 
@@ -123,7 +123,7 @@ temp_tag.html模板文件如下：
 	        {%else%}
 	            <li style="background-color: green;">{{book.btitle}}</li>
 	        {%endif%}
-		 {%empty%}
+		 { % empty % }
         	<li>对不起，没有图书</li>
 	    {%endfor%}
 	</ul>
@@ -195,16 +195,17 @@ temp_filter.html模板文件如下：
 	            <li style="background-color: green;">
 	                {{book.btitle}}
 	                ---格式化时间为：
-	                {{ book.bpub_date|date:"Y-m-j"}}
+	                { { book.bpub_date | date:'Y-m-j' } } 
 	            </li>
-	        {%endif%}
-	    {%endfor%}
+	        {% endif %}
+	    {% endfor %}
 	</ul>
 	</body>
 	</html>
 ```  
 
-运行效果如下： 
+运行效果如下：  
+
 ![](https://i.imgur.com/8IWF9S5.png)   
 
 
@@ -219,7 +220,7 @@ temp_filter.html模板文件如下：
 > 4. 自定义一个过滤器方法
 > 5. 用register的filter装饰器装饰过滤器方法
 > 6. 在settings.py模块中添加到install_app选项中，比如配置：“booktest.templatetags”
-> 7. 模板中使用过滤器时用{% load my_filter%}加载，如果有模板继承，要放到其后面  
+> 7. 模板中使用过滤器时用{ % load my_filter %}加载，如果有模板继承，要放到其后面  
 
 my_filter.py代码如下： 
 
@@ -256,9 +257,9 @@ my_filter.py代码如下：
 	{# { % if foo % }bar{ % else % } #}
 2）多行注释使用comment标签，语法如下：
 
-	{%comment%}
+	{ % comment % }
 	...
-	{%endcomment%}  
+	{ % endcomment % }  
 
 ####6.模板继承  
 模板继承和类的继承含义是一样的，主要是为了提高代码重用，减轻开发人员的工作量。
@@ -270,23 +271,23 @@ my_filter.py代码如下：
 
 标签block：用于在父模板中预留区域，留给子模板填充差异性的内容，名字不能相同。 为了更好的可读性，建议给endblock标签写上名字，这个名字与对应的block名字相同。父模板中也可以使用上下文中传递过来的数据。
 
-	{%block 名称%}
+	{ %block 名称% }
 	预留区域，可以编写默认内容，也可以没有默认内容
-	{%endblock  名称%}
+	{ %endblock  名称% }
 
 **子模板**
 标签extends：继承，写在子模板文件的第一行。
 
-	{% extends "父模板路径"%}
+	{ % extends "父模板路径" % }
 
 子模版不用填充父模版中的所有预留区域，如果子模版没有填充，则使用父模版定义的默认值。
 
 填充父模板中指定名称的预留区域。
 
-	{%block 名称%}
+	{ %block 名称% }
 	实际填充内容
 	{{block.super}}用于获取父模板中block的内容
-	{%endblock 名称%}
+	{ %endblock 名称% }
 
 示例：
 父模板中的代码如下：  
@@ -316,14 +317,14 @@ my_filter.py代码如下：
 
 ```html
 
-	{%extends 'booktest/inherit_base.html'%}
-	{%block qu2%}
+	{ % extends 'booktest/inherit_base.html' % }
+	{ % block qu2 % }
 	<ul>
-	    {%for book in list%}
+	    { % for book in list % }
 	    <li>{{book.btitle}}</li>
-	    {%endfor%}
+	    { % endfor % }
 	</ul>
-	{%endblock qu2%}
+	{ % endblock qu2 % }
 
 ```
 

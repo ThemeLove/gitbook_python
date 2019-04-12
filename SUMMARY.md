@@ -73,5 +73,7 @@
 		* [13-Django-静态文件处理](Python进阶/09-Django框架/13-Django-静态文件处理.md) 
 		* [14-Django-中间间](Python进阶/09-Django框架/14-Django-中间件.md)  
 		* [15-Django-Admin管理后台](Python进阶/09-Django框架/15-Django-Admin管理后台.md) 
-		* [16-Django-上传图片和分页](Python进阶/09-Django框架/16-Django-上传图片和分页.md)
+		* [16-Django-上传图片和分页](Python进阶/09-Django框架/16-Django-上传图片和分页.md)  
+	* [10-天天生鲜](Python进阶/10-天天生鲜/README.md) 
+		* [01-dailyfresh-01](Python进阶/10-天天生鲜/01-day01.md)
 
