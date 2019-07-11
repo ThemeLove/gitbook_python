@@ -1,9 +1,6 @@
 ####1.命令行下更好的显示mysql查询结果  
 	缘由：直接进行mysql查询时，有时查询结果字段较多，命名行下显示效果很不友好；   
-		 可以直接以 \G 结束sql语句，例如：select user,host from user\G
-	
-
-
+		 可以直接以 \G 替换分号结束sql语句，例如：select user,host from user\G
 ```sql  
 
 	mysql> select user,host from user\G
@@ -25,5 +22,8 @@
 	5 rows in set (0.00 sec)
 	
 	mysql>
-
 ```
+
+#####2.concat、concat_ws、group_concat的使用    
+
+参考博客：[https://blog.csdn.net/u013991521/article/details/80805604](https://blog.csdn.net/u013991521/article/details/80805604)
