@@ -26,4 +26,6 @@
 
 #####2.concat、concat_ws、group_concat的使用    
 
-参考博客：[https://blog.csdn.net/u013991521/article/details/80805604](https://blog.csdn.net/u013991521/article/details/80805604)
+参考博客：[https://blog.csdn.net/u013991521/article/details/80805604](https://blog.csdn.net/u013991521/article/details/80805604)   
+
+#####3.创建表的过程中comment 字段可以进行注释
