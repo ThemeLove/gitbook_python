@@ -32,17 +32,23 @@
 	3 rows in set (0.00 sec) 
 ```   
 
-####2. 创建账户、授权  
-* 需要使用实例级账户登录后操作，以root为例
+####2. 给用户授权  
+* 需要使用超级账户登录后操作，以root为例
 * 常用权限主要包括：create、alter、drop、insert、update、delete、select
 * 如果分配所有权限，可以使用all privileges   
 
- (1). 创建账户&授权   
+授权   
    
-	  grant 权限列表 on 数据库 to '用户名'@'访问主机' identified by '密码';   
+	grant 权限列表 on 数据库 to '用户名'@'访问主机' identified by '密码';  
+
+	mysql 8.0 之后以上会报错，可执行
+	grant 权限列表 on 数据库 to '用户名'@'访问主机';  
+
+	注意：all privileages 表示所有权限  
 
 ---    
-示例1: 
+示例1:   
+
 ```sql
  
      创建一个laowang的账号，密码为123456，只能通过本地访问,      
