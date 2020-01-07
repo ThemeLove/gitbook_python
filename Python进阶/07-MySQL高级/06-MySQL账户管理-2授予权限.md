@@ -46,7 +46,7 @@
 
 	注意：all privileages 表示所有权限  
 
----    
+  
 示例1:   
 
 ```sql
@@ -59,6 +59,9 @@
 	       回车后写密码，然后回车  
     
      step2：创建账户并授予所有权限
+		   //创建用户	
+           create user 'laowang'@'localhost' identified by '123456';
+		   //授权jing_dong数据库所有表的查询权限
     	   grant select on jing_dong.* to 'laowang'@'localhost' identified by '123456'; 
     
 	       说明
@@ -77,17 +80,15 @@
 	        mysql -ulaowang -p 
 	        回车后写密码，然后回车   
 ```
-   
-登录后效果如下：  
-![](https://i.imgur.com/1WNl0vl.png)   
 
----
 示例2：   
+  
 	创建一个laoli的账号，密码为12345678，可以任意电脑进行链接访问,   
 	并且对jing_dong数据库中的所有表拥有所有权限   
 
+    //创建用户	
+    create user 'laowang'@'localhost' identified by '123456';  
+
+	//授权jing_dong数据库所有表的所有权限
 	grant all privileges on jing_dong.* to "laoli"@"%" identified by "12345678"   
    
-效果如下：
-![](https://i.imgur.com/9KZLFXA.png)   
-![](https://i.imgur.com/TUMHK6x.png)

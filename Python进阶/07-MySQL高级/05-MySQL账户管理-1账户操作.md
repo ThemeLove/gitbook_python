@@ -32,9 +32,13 @@
 	* 推荐使用语法1删除用户, 如果使用语法1删除失败，采用语法2方式  
 	
 ####3. 修改操作 
-	grant 权限名称 on 数据库 to '用户名'@'Host' with grant option; 
-![](https://i.imgur.com/ju6YXiY.png)   
-![](https://i.imgur.com/5SJAxBn.png)  
+	grant 权限名称 on 数据库 to '用户名'@'Host' with grant option;    
+	
+	例如：
+	grant all privileges  *.* to 'lisi'@'%' with grant option;
+
+![](https://i.imgur.com/ju6YXiY.png)      
+![](https://i.imgur.com/5SJAxBn.png)       
 
 ####4. 修改密码
 使用root登录，修改mysql数据库的user表
@@ -52,17 +56,20 @@
 如果向在一个Ubuntu中使用msyql命令远程连接另外一台mysql服务器的话，通过以下方式即可完成，   
 但是此方法仅仅了解就好了，不要在实际生产环境中使用
 
-修改 /etc/mysql/mysql.conf.d/mysqld.cnf 文件
+修改 /etc/mysql/mysql.conf.d/mysqld.cnf 文件，注释bind-address = 127.0.0.1
 
-    vim /etc/mysql/mysql.conf.d/mysqld.cnf  
-![](https://i.imgur.com/zFnnNgu.png)   
+    vim /etc/mysql/mysql.conf.d/mysqld.cnf    
+
+![](/assets/07-linux下设置mysql允许远程访问.png) 
 
 然后重启msyql    
     
 	service mysql restart  
 
-在另外一台Ubuntu中进行连接测试  
-![](https://i.imgur.com/LQ52vMA.png)   
+在另外一台Ubuntu中进行连接测试    
+
+	命令：mysql -h远程host -u用户名 -p密码   
+	例如：mysql -h10.200.102.15 -uzhangsan -p123456
  
 如果依然连不上，可能原因：
 
@@ -85,5 +92,5 @@
   
 
 ####4. 忘记 root 账户密码怎么办 !!
-一般也轮不到我们来管理 root 账户,所以别瞎卖白粉的心了万一呢?    
-到时候再来查http://blog.csdn.net/lxpbs8851/article/details/10895085
+一般也轮不到我们来管理 root 账户,所以别瞎操卖白粉的心了，
+万一呢?到时候再来查http://blog.csdn.net/lxpbs8851/article/details/10895085
