@@ -190,6 +190,44 @@
 ### 几个查找命令 
 	whereis xxx  	
 	which xxx 		:	查找命令的位置
-	find / -name xxxx  :  查找xxx文件的位置
+	find / -name xxxx  :  查找xxx文件的位置  
+
+### Linux服务器和Window总传输文件可以用sz、rz命令  
+> 场景：通常在window上我们操作远程服务器用到ssh远程客户端软件，比如XShell,  
+  一般我们需要先登录到远程服务器上（也可直接用命令： ssh 远程服务器用户名@远程服务器ip 登录）   
+  如果我们有需求需要从window或者服务器上互传文件就可以用sz、rz命令  
+
+> 步骤：  
+>	1.在linux上使用sz、rz命名需要安装lrzsz,执行apt install lrzsz 
+ 
+>	2.sz:sz 中的s表示send:表示从linux服务器上发送文件。格式sz 文件名  
+	  window就会弹出窗口选择目录存放linux发送过来的文件 
+
+>	3.rz:rz 中的r表示received:表示linux服务器需要接受来自window的文件。格式rz  
+	  window就会弹出窗口选择要发送给liux服务器的文件   
+
+>	4.sz、rz命令只能传输文件，不能传输文件夹，可以将文件夹压缩之后再传输   
+
+### 两个linux服务器之间可以通过scp命令来远程拷贝文件或文件夹   
+	注意： 
+	1.cp命令是一台linux服务器上本地拷贝命令，scp 是跨服拷贝命令
+
+    2.scp是 secure copy的缩写，scp在夸机器复制的时候为了提高数据的安全性，  
+      使用了ssh连接和加密方式，如果机器之间配置了ssh免密码登录，那在使用  
+	  scp的时候密码都不用输入 
+
+	命令格式：scp [参数] [原路径] [目标路径]  
+	
+	应用场景：两台机器IP分别为：A.104.238.161.75，B.43.224.34.73
+	
+	在A服务器上操作，将B服务器上/home/lk/目录下所有的文件全部复制到本地的/root目录下，  
+	命令为：scp -r root@43.224.34.73:/home/lk /root  
+
+	在A服务器上将/root/lk目录下所有的文件传输到B的/home/lk/cpfile目录下，  
+	命令为：scp -r /root/lk root@43.224.34.73:/home/lk/cpfile  
+
+
+  
+     
 
 
