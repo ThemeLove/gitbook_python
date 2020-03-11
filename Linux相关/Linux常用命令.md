@@ -224,7 +224,11 @@
 	命令为：scp -r root@43.224.34.73:/home/lk /root  
 
 	在A服务器上将/root/lk目录下所有的文件传输到B的/home/lk/cpfile目录下，  
-	命令为：scp -r /root/lk root@43.224.34.73:/home/lk/cpfile  
+	命令为：scp -r /root/lk root@43.224.34.73:/home/lk/cpfile    
+
+### linux 下载或发送请求可以使用curl 或 wget 命令  
+	
+参考博客[https://blog.csdn.net/yushupan/article/details/83578633](https://blog.csdn.net/yushupan/article/details/83578633)
 
 
   
