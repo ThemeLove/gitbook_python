@@ -35,7 +35,7 @@
 	grant 权限名称 on 数据库 to '用户名'@'Host' with grant option;    
 	
 	例如：
-	grant all privileges  *.* to 'lisi'@'%' with grant option;
+	grant all privileges on *.* to 'lisi'@'%' with grant option;
 
 ![](https://i.imgur.com/ju6YXiY.png)      
 ![](https://i.imgur.com/5SJAxBn.png)       
